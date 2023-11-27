@@ -1,11 +1,14 @@
 Q1 echo vs print ?
 The difference between echo and print is that print has a return value, which is one, and can take only one argument. It is slower than echo. On the other hand, echo doesn't have a return value and can take more than one parameter, making it faster than print..
 . 
+.
 Q2 What is JIT Compile ?
 JIT, short for 'Just-In-Time' Compile, translates the code of high-level programming languages (interpreted languages) into machine code at runtime, just before execution. It operates dynamically during program execution. JIT is one of the major features in PHP 8 designed to improve the performance of PHP scripts
 .
+.
 Q3 Compile time vs run time
 Compile time is the period during which the code is translated into machine code or intermediate code, while runtime is the time when the code is executed on the computer. There are two types of errors: those detected by the compiler during compile time and runtime errors, which can only be identified during execution.
+.
 .
 Q4 Loosely type vs strongly type programming language
 
