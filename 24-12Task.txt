@@ -1,0 +1,34 @@
+1-WHERE vs. HAVING:
+
+WHERE: Used in a SELECT, UPDATE, or DELETE statement to filter records based on a specified condition. It is applied before the data is grouped and aggregated.
+HAVING: Used in a SELECT statement to filter the results of aggregate functions applied to grouped data. It is applied after the data is grouped and aggregated.
+
+
+2-DELETE vs. TRUNCATE:
+
+DELETE: Removes rows from a table based on a condition. It is a Data Manipulation Language (DML) command and can be rolled back.
+TRUNCATE: Removes all rows from a table, but it is a Data Definition Language (DDL) command. It is faster than DELETE as it doesn't log individual row deletions, and it cannot be rolled back.
+
+
+3-When 
+It selects different results based on specified conditions for each row.
+
+SELECT
+    CASE
+        WHEN condition1 THEN result1
+        WHEN condition2 THEN result2
+        ELSE result3
+    END AS new_column
+FROM your_table;
+
+
+4-Union
+ The UNION operator is used to combine the results of two SELECT statements.
+ It effectively merges the result sets, eliminating duplicate rows.
+The number and data types of columns in the SELECT statements must match for a successful UNION.
+
+Example: Combining unique rows from two tables into a single result set.
+SELECT column1, column2 FROM table1
+UNION
+SELECT column1, column2 FROM table2;
+
