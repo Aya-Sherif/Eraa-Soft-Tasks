@@ -1,0 +1,21 @@
+Definition:
+
+Abstract Class: An abstract class is a class that cannot be instantiated on its own and may contain abstract methods (methods without a body) that must be implemented by its child classes. Abstract classes can also have regular methods with a defined implementation.
+
+Interface: An interface is a collection of method signatures without any implementation. It defines a contract that classes implementing the interface must adhere to, ensuring that those classes provide specific methods.
+
+Instantiation:
+
+Abstract Class: You cannot create an instance of an abstract class directly. Instead, you must extend the abstract class and create an instance of the child class.
+
+Interface: Interfaces cannot be instantiated. You need to create a class that implements the interface, and then you can create an instance of that class.
+
+Multiple Inheritance:
+
+Abstract Class: PHP does not support multiple inheritance for classes. A class can extend only one abstract class.
+Interface: PHP supports multiple interfaces for a single class. A class can implement multiple interfaces, inheriting the method signatures from each.
+
+Method Implementation:
+
+Abstract Class: Abstract classes can have both abstract (without implementation) and regular methods (with implementation).
+Interface: Interfaces can only have method signatures without any implementation. The implementing class must provide the actual implementation for each method.
